@@ -1,36 +1,62 @@
 @inject IOMDbService _Omdb
 @using Services;
 @using Models;
-@page "/Search"
-@if (movies != null && movies.Any())
-{
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        @foreach (var movie in movies)
-        {
-            <div class="col">
-                <div class="card h-100">
-                    <img src="@movie.Poster" class="card-img-top" alt="@movie.Title" onerror="this.src='https://via.placeholder.com/150'">
-                    <div class="card-body">
-                        <h5 class="card-title">@movie.Title</h5>
-                        <p class="card-text">Release Year: @movie.ReleaseYear</p>
+@rendermode InteractiveServer
+@page "/"
+
+<div class="container">
+    <h3>Search Movie, Series or Episode</h3>
+    
+    <div class="mb-3 d-flex gap-3">
+        <input @bind="MovieTitle" class="form-control" placeholder="Enter movie title..." />
+        <input @bind="ReleaseYear" class="form-control" placeholder="Enter movie release year title..." />
+    </div>
+    
+    <button class="btn btn-primary mb-3" @onclick="SearchMovies">Search</button>
+    
+    @if (isLoading)
+    {
+        <p>Loading...</p>
+    }
+    
+    @if (movies != null && movies.Any())
+    {
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            @foreach (var movie in movies)
+            {
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="@movie.Poster" class="card-img-top" alt="@movie.Title" onerror="this.src='https://via.placeholder.com/150x220?text=No+Image'">
+                        <div class="card-body">
+                            <h5 class="card-title">@movie.Title</h5>
+                            <p class="card-text">Year: @movie.Year</p>
+                            <p class="card-text">Type: @movie.Type</p>
+                            <p class="card-text">Id: @movie.imdbID</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        }
-    </div>
-}
-
-
-
+            }
+        </div>
+    }
+    else if (movies != null)
+    {
+        <p>No movies found.</p>
+    }
+</div>
 
 @code {
-    List<Movie> movies;
+    private string MovieTitle = "";
+    private string ReleaseYear = "";
+    private List<Movie> movies;
+    private bool isLoading = false;
 
-    protected override async Task OnInitializedAsync(){
-        movies = await _Omdb.SearchMovies("blade runner");
+    private async Task SearchMovies()
+    {
+        isLoading = true;
+        movies = await _Omdb.GetMoviesAsync(MovieTitle, ReleaseYear);
+        isLoading = false;
     }
 }
-
 
 
 

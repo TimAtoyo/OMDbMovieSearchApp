@@ -13,10 +13,9 @@ public class OMDbService : IOMDbService
     {
         _client = client;
     }
-    public async Task<List<Movie>> SearchMovies(string query)
+    public async Task<List<Movie>> GetMoviesAsync(string title, string year)
     {
-        var response = await _client.GetFromJsonAsync<SearchResponse>($"http://www.omdbapi.com/?apikey={ApiKey}&s={query}");
-
+        var response = await _client.GetFromJsonAsync<SearchResponse>($"http://www.omdbapi.com/?apikey={ApiKey}&s={title}&y={year}&plot=full");
         if (response?.Search != null)
         {
             return response.Search;

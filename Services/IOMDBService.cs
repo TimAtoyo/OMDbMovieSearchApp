@@ -3,5 +3,5 @@ namespace Services;
 
 public interface IOMDbService
 {
-    Task<List<Movie>> SearchMovies(string query);
+    Task<List<Movie>> GetMoviesAsync(string title, string year);
 }

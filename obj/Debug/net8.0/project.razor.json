@@ -124,43 +124,6 @@
         }
       },
       {
-        "HashCode": -214557358,
-        "Kind": "Components.Component",
-        "Name": "Coding_Practice.Components.Pages.Home",
-        "AssemblyName": "Coding-Practice",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Home"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Coding_Practice.Components.Pages.Home",
-          "Common.TypeNameIdentifier": "Home",
-          "Common.TypeNamespace": "Coding_Practice.Components.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1910680390,
-        "Kind": "Components.Component",
-        "Name": "Coding_Practice.Components.Pages.Home",
-        "AssemblyName": "Coding-Practice",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Coding_Practice.Components.Pages.Home"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Coding_Practice.Components.Pages.Home",
-          "Common.TypeNameIdentifier": "Home",
-          "Common.TypeNamespace": "Coding_Practice.Components.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 924287097,
         "Kind": "Components.Component",
         "Name": "Coding_Practice.Components.Pages.Weather",
@@ -192,6 +155,43 @@
         "Metadata": {
           "Common.TypeName": "Coding_Practice.Components.Pages.Weather",
           "Common.TypeNameIdentifier": "Weather",
+          "Common.TypeNamespace": "Coding_Practice.Components.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -214557358,
+        "Kind": "Components.Component",
+        "Name": "Coding_Practice.Components.Pages.Home",
+        "AssemblyName": "Coding-Practice",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Home"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Coding_Practice.Components.Pages.Home",
+          "Common.TypeNameIdentifier": "Home",
+          "Common.TypeNamespace": "Coding_Practice.Components.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1910680390,
+        "Kind": "Components.Component",
+        "Name": "Coding_Practice.Components.Pages.Home",
+        "AssemblyName": "Coding-Practice",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Coding_Practice.Components.Pages.Home"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Coding_Practice.Components.Pages.Home",
+          "Common.TypeNameIdentifier": "Home",
           "Common.TypeNamespace": "Coding_Practice.Components.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
