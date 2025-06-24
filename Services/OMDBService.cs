@@ -4,10 +4,10 @@ using Models;
 
 namespace Services;
 
-public class OMDbService
+public class OMDbService : IOMDbService
 {
     private readonly HttpClient _client;
-    private readonly string ApiKey =  "779067b";
+    private readonly string ApiKey = "779067b";
 
     public OMDbService(HttpClient client)
     {

@@ -1,4 +1,5 @@
 using Coding_Practice.Components;
+using Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 // Registering Movie Service
+builder.Services.AddScoped<IOMDbService, OMDbService>();
+builder.Services.AddScoped(sp => new HttpClient());
 
 var app = builder.Build();
 

@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/timothyatoyo/Documents/Coding-Practice/obj/Debug/net8.0/scopedcss/projectbundle/Coding-Practice.bundle.scp.css",
+      "PackagePath": "staticwebassets/Coding-Practice.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/timothyatoyo/Documents/Coding-Practice/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/timothyatoyo/Documents/Coding-Practice/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/timothyatoyo/Documents/Coding-Practice/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/timothyatoyo/Documents/Coding-Practice/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Coding-Practice.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Coding-Practice.props",
+      "PackagePath": "build\\Coding-Practice.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Coding-Practice.props",
+      "PackagePath": "buildMultiTargeting\\Coding-Practice.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Coding-Practice.props",
+      "PackagePath": "buildTransitive\\Coding-Practice.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
