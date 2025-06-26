@@ -1,4 +1,3 @@
-# OMDbMovieSearchApp
 # Movie Search Web App
 
 This is a web application built using Blazor (ASP.NET Core) for searching movies, series, and episodes using the free OMDb API (https://www.omdbapi.com/).
